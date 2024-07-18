@@ -25,26 +25,19 @@ export default async function Page({
 	//console.log(content);
 
 	return (
-		<div className="flex flex-col text-center">
-			<div>
-				{/* <h2
-					className={`${inter.className} text-4xl font-semibold bg-gradient-to-br from-slate-300 to-white text-transparent bg-clip-text inline-block p-1`}
-				>
-					{data.title}
-				</h2> */}
-				<div
-					className={`${inter.className} prose prose-headings:text-slate-200
-						 prose-p:text-slate-100 prose-headings:font-semibold  prose-ul:text-md prose-ul:text-slate-200 prose-a:text-lg prose-a:underline hover:prose-a:text-bg-2 prose-ul:list-none prose-a:text-slate-100`}
-				>
-					<MDXRemote
-						source={content}
-						components={{
-							a: CustomLink,
-							img: ProfilePic,
-							PreviewCard: PreviewCard,
-						}}
-					/>
-				</div>
+		<div className="flex flex-col text-center mx-2">
+			<div
+				className={`${inter.className} prose prose-md sm:prose-lg prose-headings:text-slate-200
+						 prose-p:text-slate-100 prose-headings:font-semibold prose-ul:text-md prose-ul:text-slate-200 sm:prose-a:text-lg prose-a:underline hover:prose-a:text-bg-2 prose-ul:list-none prose-ul:ps-0 prose-a:text-slate-100`}
+			>
+				<MDXRemote
+					source={content}
+					components={{
+						a: CustomLink,
+						img: ProfilePic,
+						PreviewCard: PreviewCard,
+					}}
+				/>
 			</div>
 		</div>
 	);

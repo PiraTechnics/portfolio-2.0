@@ -6,7 +6,7 @@ const desc =
 
 export default function Home() {
 	return (
-		<div className=" flex flex-col items-center justify-center gap-4">
+		<div className=" flex flex-col items-center justify-center gap-4 mx-2">
 			<Image
 				src="/profile.jpg"
 				alt="Vercel Logo"
@@ -17,7 +17,7 @@ export default function Home() {
 				priority
 			/>
 			<h1
-				className={`${inter.className} text-5xl font-semibold bg-gradient-to-br from-slate-300 to-white text-transparent bg-clip-text inline-block p-1`}
+				className={`${inter.className} text-center text-5xl font-semibold bg-gradient-to-br from-slate-300 to-white text-transparent bg-clip-text inline-block p-1`}
 			>
 				Devin Younge, Writer
 			</h1>

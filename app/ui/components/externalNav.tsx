@@ -2,7 +2,7 @@ import { ExternalNavLinks } from "@/data";
 
 export const ExternalNav = () => {
 	return (
-		<div className="flex gap-6">
+		<div className="flex flex-wrap justify-center gap-6 mx-2">
 			{ExternalNavLinks.map((entry, i) => (
 				<div key={`external-${entry.name}`}>
 					<a

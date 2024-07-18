@@ -19,7 +19,7 @@ export default function RootLayout({
 			<body
 				className={`${quicksand.className} bg-gradient-to-br from-bg-1 to-bg-2 text-slate-100 flex justify-center`}
 			>
-				<div className="container mx-auto max-w-3xl min-h-screen flex flex-col items-center justify-center gap-4">
+				<div className="mx-auto max-w-3xl min-h-screen flex flex-col items-center justify-center gap-10 sm:gap-6 mt-6 mb-12">
 					{children}
 					<NavButtons />
 					<ExternalNav />
