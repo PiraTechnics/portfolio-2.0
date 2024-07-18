@@ -25,7 +25,8 @@ export default async function Page({
 	//console.log(content);
 
 	return (
-		<div className="flex flex-col text-center mx-2">
+		<div className="flex flex-col justify-center text-center mx-2">
+			{data.profile && <ProfilePic src={data.profile} alt={data.profileAlt} />}
 			<div
 				className={`${inter.className} prose prose-md sm:prose-lg prose-headings:text-slate-200
 						 prose-p:text-slate-100 prose-headings:font-semibold prose-ul:text-md prose-ul:text-slate-200 sm:prose-a:text-lg prose-a:underline hover:prose-a:text-bg-2 prose-ul:list-none prose-ul:ps-0 prose-a:text-slate-100`}
@@ -34,7 +35,6 @@ export default async function Page({
 					source={content}
 					components={{
 						a: CustomLink,
-						img: ProfilePic,
 						PreviewCard: PreviewCard,
 					}}
 				/>

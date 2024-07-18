@@ -11,7 +11,7 @@ export default function ProfilePic(props: any) {
 			width={150}
 			height={150}
 			priority
-			className="rounded-full mx-auto"
+			className="rounded-full mx-auto my-8 sm:my-6 sm:w-48"
 		/>
 	);
 }
