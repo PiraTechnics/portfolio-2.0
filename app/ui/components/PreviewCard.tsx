@@ -17,7 +17,7 @@ export const PreviewCard = ({ img, title, url, alt }: PreviewCardProps) => {
 				title={title}
 				width={400}
 				height={200}
-				className="rounded-md transition ease-in-out hover:scale-105  duration-200 p-2 mx-auto"
+				className="rounded-xl transition ease-in-out hover:scale-105  duration-200 p-2 mx-auto"
 			/>
 		</Link>
 	);
