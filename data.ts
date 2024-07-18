@@ -5,7 +5,7 @@ import Kofi from "@/app/ui/icons/kofi";
 import Twitter from "@/app/ui/icons/twitter";
 import Threads from "@/app/ui/icons/threads";
 import Goodreads from "@/app/ui/icons/goodreads";
-import Discord from "@/app/ui/icons/discord";
+//import Discord from "@/app/ui/icons/discord";
 import Facebook from "@/app/ui/icons/facebook";
 import Github from "@/app/ui/icons/github";
 import Medium from "@/app/ui/icons/medium";
