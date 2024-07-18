@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { inter } from "./fonts";
+import { inter } from "../fonts";
 
 const desc =
 	"Devin Younge (He/Him) is a writer specializing in Technology, Tabletop RPGs, and Fantasy Fiction. He has also worked in journalism, entertainment, and software development.";

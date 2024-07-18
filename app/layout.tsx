@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { quicksand } from "./fonts";
+import { NavButtons } from "./ui/components/NavButtons";
+import { ExternalNav } from "./ui/components/externalNav";
 
 export const metadata: Metadata = {
 	title: "Devin Younge",
@@ -17,9 +19,11 @@ export default function RootLayout({
 			<body
 				className={`${quicksand.className} bg-gradient-to-br from-bg-1 to-bg-2 text-slate-100 flex justify-center`}
 			>
-				<main className="min-h-screen max-w-3xl flex flex-col items-center justify-center gap-4 mb-8">
+				<div className="container mx-auto max-w-3xl min-h-screen flex flex-col items-center justify-center gap-4">
 					{children}
-				</main>
+					<NavButtons />
+					<ExternalNav />
+				</div>
 			</body>
 		</html>
 	);
