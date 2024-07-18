@@ -27,11 +27,7 @@ export function getAllSections() {
 		};
 	});
 
-	//if given a priority, sort by that
-
+	//if given a priority, sort by that (ascending order)
+	sections.sort((a, b) => a.frontMatter.order - b.frontMatter.order);
 	return sections;
-}
-
-export function sortSections() {
-	//TODO: figure out how to sort by a given paramter -- such as provided order/priority
 }
