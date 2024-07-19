@@ -2,10 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { inter } from "../fonts";
 import CustomLink from "@/app/ui/components/mdx/CustomLink";
 import ProfilePic from "../ui/components/mdx/ProfilePic";
 import { PreviewCard } from "../ui/components/PreviewCard";
+import CustomImg from "../ui/components/mdx/CustomImg";
 
 const sectionsDir = path.join(process.cwd(), "sections");
 
@@ -36,6 +36,7 @@ export default async function Page({
 					components={{
 						a: CustomLink,
 						PreviewCard: PreviewCard,
+						img: CustomImg,
 					}}
 				/>
 			</div>
