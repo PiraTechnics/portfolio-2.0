@@ -3,6 +3,7 @@ import "./globals.css";
 import { quicksand } from "./fonts";
 import { NavButtons } from "./ui/components/NavButtons";
 import { ExternalNav } from "./ui/components/externalNav";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
 	title: "Devin Younge",
@@ -24,6 +25,7 @@ export default function RootLayout({
 					<NavButtons />
 					<ExternalNav />
 				</div>
+				<Analytics />
 			</body>
 		</html>
 	);
