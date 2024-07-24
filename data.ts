@@ -59,7 +59,7 @@ export const ExternalNavLinks = [
 	},
 	{
 		name: "Meduim",
-		href: "https://medium.com/@devin1younge",
+		href: "https://medium.com/@devinyounge",
 		icon: Medium,
 	},
 	{
