@@ -5,7 +5,7 @@ import { inter } from "../fonts";
   "Devin Younge (He/Him) is a writer specializing in Technology, Tabletop RPGs, and Fantasy Fiction. He has also worked in journalism, entertainment, and software development.";
  */
 
-const desc = "Website Under Construction, Check back soon!";
+const desc = "Website under construction, check back soon!";
 
 export default function Home() {
   return (
