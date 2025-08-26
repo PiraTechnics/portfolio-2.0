@@ -22,8 +22,8 @@ export default function RootLayout({
       >
         <div className="mx-auto max-w-3xl min-h-screen flex flex-col items-center justify-center gap-10 sm:gap-6 mt-6 mb-12">
           {children}
-          {/* <NavButtons />
-					<ExternalNav /> */}
+          <NavButtons />
+          <ExternalNav />
         </div>
         <Analytics />
       </body>
