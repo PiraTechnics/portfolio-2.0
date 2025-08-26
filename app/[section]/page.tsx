@@ -9,22 +9,23 @@ import CustomImg from "../ui/components/mdx/CustomImg";
 
 const sectionsDir = path.join(process.cwd(), "sections");
 
-export default async function Page({
-	params,
-}: {
-	params: { section: string };
-}) {
-	const id = params.section;
-	console.log(`Section id: ${id}`);
-	console.log(`Sections Directory: ${sectionsDir}`);
-	//get path and page data, using 'sections' folder
-	const fullPath = path.join(sectionsDir, `${id}.mdx`);
-	const fileContents = fs.readFileSync(fullPath, "utf8");
-	const { data, content } = matter(fileContents);
+export default async function Page(
+    props: {
+        params: Promise<{ section: string }>;
+    }
+) {
+    const params = await props.params;
+    const id = params.section;
+    console.log(`Section id: ${id}`);
+    console.log(`Sections Directory: ${sectionsDir}`);
+    //get path and page data, using 'sections' folder
+    const fullPath = path.join(sectionsDir, `${id}.mdx`);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const { data, content } = matter(fileContents);
 
-	//console.log(content);
+    //console.log(content);
 
-	return (
+    return (
 		<div className="flex flex-col justify-center text-center mx-2">
 			{data.profile && <ProfilePic src={data.profile} alt={data.profileAlt} />}
 			<div
